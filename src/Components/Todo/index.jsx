@@ -12,10 +12,7 @@ function Todo() {
   const [appendList, setAppendList] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [tasks, setTasks] = useState([
-    { select: true, label: "Do homework", status: false },
-    { select: true, label: "Go to Work", status: false },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   //   <Checkbox.Group
   //     options={options}
