@@ -154,6 +154,7 @@ function Todo() {
                     open={isModalOpen}
                     onOk={handleOk}
                     onCancel={handleCancel}
+                    className="modal"
                   >
                     <Form>
                       <Form.Item>
