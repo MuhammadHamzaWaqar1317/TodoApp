@@ -143,9 +143,12 @@ function Todo() {
                   <Button className="btn" onClick={showModal}>
                     Add
                   </Button>
-                  <Button className="btn" onClick={handleDelete}>
-                    Delete
-                  </Button>
+                  {tasks.length == 0 ? null : (
+                    <Button className="btn" onClick={handleDelete}>
+                      Delete
+                    </Button>
+                  )}
+
                   <Modal
                     title="Add Item"
                     open={isModalOpen}
