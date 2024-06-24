@@ -99,7 +99,7 @@ function Todo() {
             {tasks?.map((item, index) => (
               <Row>
                 <Col offset={0} lg={23} md={23} xs={22}>
-                  <div className="task">
+                  <div className="task" key={index}>
                     <div className="innerTask">
                       <span
                         onClick={() => handleSelect(index)}
